@@ -1,0 +1,42 @@
+ul {
+  padding: 5px;
+  margin: 5px;
+  background: #faebd7;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.create-update-form {
+  padding: 5px;
+  margin: 5px;
+  background: aqua;
+}
+
+.form-group {
+  margin-bottom: 5px;
+}
+
+body {
+	text-align: center;
+}
+
+.devoured {
+	float: left;
+	display: inline-block;
+	margin: auto;
+	width: 45%;
+
+}
+
+.undevoured {
+	float: left;
+	display: inline-block;;
+	margin: auto;
+	width: 45%;
+}
+
+.addBurger {
+	clear: both;
+}

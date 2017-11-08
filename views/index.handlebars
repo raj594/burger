@@ -1,29 +1,35 @@
 <h1>Burgers</h1>
-
-<ul>
+<hr>
+<div class="undevoured">
+<p></p>
   {{#each burger}}
     {{#unless devoured}}
       {{> burgers/burger-block devoured=true}}
     {{/unless}}
   {{/each}}
-</ul>
-<hr><br>
-<ul>
+
+</div>
+
+<div class="devoured">
+
   {{#each burger}}
     {{#if devoured}}
       <p>{{id}}: {{burger_name}}</p>
     {{/if}}
   {{/each}}
-</ul>
 
+</div>
 
-<h2>Add a Burger</h2>
-<form class="create-form">
+<div class="addBurger">
+	<hr>
+	<h2>Add a Burger</h2>
+	<form class="create-form">
 
-  <div class="form-group">
-    <label for="ca">Burger Name:</label>
-    <input type="text" id="burger" name="name">
-  </div>
+	  <div class="form-group">
+	    <label for="ca">Burger Name:</label>
+	    <input type="text" id="burger" name="name">
+	  </div>
 
-  <button type="submit">Add Burger</button>
-</form>
+	  <button type="submit">Add Burger</button>
+	</form>
+</div>

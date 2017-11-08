@@ -20,21 +20,19 @@ ul {
 
 body {
 	text-align: center;
+	background: #003B46;
+	color: #C4DFE6;
 }
 
-.devoured {
+.devoured, .undevoured {
 	float: left;
-	display: inline-block;
-	margin: auto;
-	width: 45%;
+	display: table;
+	
 
-}
+	width: 50%;
+	background: #07575B;
+	height: auto;
 
-.undevoured {
-	float: left;
-	display: inline-block;;
-	margin: auto;
-	width: 45%;
 }
 
 .addBurger {

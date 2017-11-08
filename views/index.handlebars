@@ -1,6 +1,8 @@
 <h1>Burgers</h1>
 <hr>
 <div class="undevoured">
+  <h2>Burgers To Be Devoured</h2>
+  <hr>
 <p></p>
   {{#each burger}}
     {{#unless devoured}}
@@ -11,17 +13,18 @@
 </div>
 
 <div class="devoured">
-
+  <h2>Burgers You've Eaten</h2>
+  <hr>
   {{#each burger}}
     {{#if devoured}}
-      <p>{{id}}: {{burger_name}}</p>
+      {{> burgers/devoured-block devoured=true}}
     {{/if}}
   {{/each}}
 
 </div>
 
 <div class="addBurger">
-	<hr>
+  <hr>
 	<h2>Add a Burger</h2>
 	<form class="create-form">
 
